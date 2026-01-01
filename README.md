@@ -36,14 +36,17 @@ cd react-starter-template
 ### 2. Install dependencies
 ```bash
 npm install
+```
 
 ### 3. Run development server
 ```bash
 npm run dev
+```
 
 ### 4. Build for production
 ```bash
 npm run build
+```
 
 ## 📂 Project Structure
 
@@ -56,3 +59,4 @@ src/
 ├─ styles/
 ├─ App.jsx
 └─ main.jsx
+```
