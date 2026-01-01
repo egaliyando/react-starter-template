@@ -21,7 +21,7 @@ A modern React starter template built with **Vite** and **Tailwind CSS**, design
 - React
 - Vite
 - Tailwind CSS
-- JavaScript / TypeScript (optional)
+- TypeScript
 - ESLint & Prettier
 
 ---
