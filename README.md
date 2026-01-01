@@ -1,62 +1,93 @@
 # React Starter Template
 
-A modern React starter template built with **Vite** and **Tailwind CSS**, designed for fast development, scalability, and clean project structure.
+A modern, production-ready React starter template built with:
 
----
+- ⚛️ **React 18** - Latest React with concurrent features
+- 📘 **TypeScript** - Type-safe development
+- ⚡ **Vite** - Lightning-fast build tool
+- 🎨 **Tailwind CSS** - Utility-first CSS framework
 
-## ✨ Features
+## Project Structure
 
-- ⚡ Fast development with Vite
-- 🎨 Utility-first styling with Tailwind CSS
-- 🧱 Clean and scalable folder structure
-- ♻️ Reusable component pattern
-- 🧹 ESLint & Prettier ready
-- 🌱 Environment variables support
-- 📦 Optimized production build
+```
+src/
+├── components/       # Reusable UI components
+│   ├── Button.tsx
+│   └── Card.tsx
+├── pages/           # Page-level components
+│   └── HomePage.tsx
+├── hooks/           # Custom React hooks
+│   └── useCounter.ts
+├── utils/           # Helper functions
+│   └── format.ts
+├── styles/          # Global styles
+│   └── index.css
+├── App.tsx          # Root component
+└── main.tsx         # Application entry point
+```
 
----
+## Getting Started
 
-## 🛠 Tech Stack
+### Install dependencies
 
-- React
-- Vite
-- Tailwind CSS
-- TypeScript
-- ESLint & Prettier
-
----
-
-## 🚀 Getting Started
-
-### 1. Clone repository
-```bash
-git clone https://github.com/your-username/react-starter-template.git
-cd react-starter-template
-
-### 2. Install dependencies
 ```bash
 npm install
 ```
 
-### 3. Run development server
+### Run development server
+
 ```bash
 npm run dev
 ```
 
-### 4. Build for production
+### Build for production
+
 ```bash
 npm run build
 ```
 
-## 📂 Project Structure
+### Preview production build
 
 ```bash
-src/
-├─ components/
-├─ pages/
-├─ hooks/
-├─ utils/
-├─ styles/
-├─ App.jsx
-└─ main.jsx
+npm run preview
+```
+
+## Features
+
+- ✅ TypeScript strict mode
+- ✅ Dark mode support
+- ✅ Responsive design
+- ✅ Modern React patterns (hooks, functional components)
+- ✅ Clean and scalable architecture
+- ✅ Production-ready configuration
+
+## Code Style
+
+- Functional components with TypeScript
+- Arrow functions
+- Default exports for components
+- Proper TypeScript typing (no `any`)
+- Clean and readable code structure
+import reactDom from 'eslint-plugin-react-dom'
+
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+      // Enable lint rules for React
+      reactX.configs['recommended-typescript'],
+      // Enable lint rules for React DOM
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
 ```
