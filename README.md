@@ -35,6 +35,3 @@ cd react-starter-template
 npm install
 npm run dev
 npm run build
-
-
-
