@@ -32,3 +32,9 @@ A modern React starter template built with **Vite** and **Tailwind CSS**, design
 ```bash
 git clone https://github.com/your-username/react-starter-template.git
 cd react-starter-template
+npm install
+npm run dev
+npm run build
+
+
+
